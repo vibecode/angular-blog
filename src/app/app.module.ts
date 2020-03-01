@@ -6,14 +6,16 @@ import { AppComponent } from './app.component'
 import { HomePageComponent } from './home-page/home-page.component'
 import { PostPageComponent } from './post-page/post-page.component'
 import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component'
-import { AdminModule } from './admin/admin.module'
+import { AdminModule } from './admin/admin.module';
+import { PostComponent } from './shared/components/post/post.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     PostPageComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
+    PostComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
