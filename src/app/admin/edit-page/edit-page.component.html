@@ -18,7 +18,11 @@
       <quill-editor form-control-name="text"> </quill-editor>
     </div>
 
-    <button class="btn btn-primary" type="submit" [disabled]="form.invalid">
+    <button
+      class="btn btn-primary"
+      type="submit"
+      [disabled]="form.invalid || submitted"
+    >
       Save Post
     </button>
   </form>
