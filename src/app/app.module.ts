@@ -11,6 +11,10 @@ import { PostComponent } from './shared/components/post/post.component'
 import { SharedModule } from './admin/shared/shared.module'
 import { HTTP_INTERCEPTORS } from '@angular/common/http'
 import { AuthInterceptor } from './admin/shared/services/auth.interceptor'
+import { registerLocaleData } from '@angular/common'
+import RU_LOCALE from '@angular/common/locales/ru'
+
+registerLocaleData(RU_LOCALE, 'ru')
 
 const INTERCEPTOR_PROVIDER: Provider = {
   provide: HTTP_INTERCEPTORS,
